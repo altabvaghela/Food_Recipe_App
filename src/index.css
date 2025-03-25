@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.searchBar input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+}
+.searchBar button {
+  width: auto;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.mealImg {
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 3px rgb(240, 240, 240);
+  border-radius: 11px;
+  padding-bottom: 15px;
+}
+.mealImg img {
+  width: 100%;
+  height: auto;
+  max-height: 270px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+.mealImg p {
+  font-weight: 600;
+}
+.mealImg button {
+  width: auto;
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 21px;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.mealInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: rgb(255, 181, 42);
+  padding: 30px;
+}
+.mealInfo img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 11px;
+}
+.mealInfo button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 18px;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+}
+.mealInfo .info {
+  margin-top: 0;
+  max-width: 500px;
+}
+.head{
+  text-align: center;
+}
+.error{
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchBar input {
+    max-width: 90%;
+  }
+  .searchBar button {
+    max-width: 200px;
+  }
+
+  .mealInfo {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .mealInfo img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mealImg {
+    max-width: 90%;
+  }
+  .mealInfo img {
+    max-width: 250px;
+  }
+}
