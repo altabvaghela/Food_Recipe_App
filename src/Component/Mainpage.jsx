@@ -8,7 +8,7 @@ const Mainpage = () => {
 
   const myfun = async () => {
     if (search === "") {
-      setMsg("Please enter something");
+      setMsg("Please Enter Something");
       setData([]); 
     } else {
       try {
